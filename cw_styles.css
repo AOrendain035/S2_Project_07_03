@@ -16,9 +16,11 @@
 */
 
 
+/* For the line of code underneath, I have imported styles from another stylesheet so that I can add on to them here, in a way. */
 /* Import Basic Design Styles  */
 @import url("cw_designs.css");
 
+/* For the chunk of code underneath, I have created styles that will be applicable to all devices. These styles define the bottom nav as a flexbox. I have also made it so that the content wraps in rows and that the links within the bottom nav have a certain size. */
 /* ===============================
 	General Styles for All Devices
    ===============================
@@ -29,6 +31,7 @@ nav#bottom {
     -webkit-flex-flow: row nowrap;
     flex-flow: row nowrap;
     justify-content: center;
+    margin: auto;
 }
 
 nav#bottom ul {
@@ -37,6 +40,7 @@ nav#bottom ul {
     flex: 1;
 }
 
+/* For the extensive chunk of code underneath, I have added styles that will only affect mobile devices. */
 /* ===============================
 	Mobile Styles up to 480 pixels
    ===============================
@@ -48,8 +52,8 @@ nav#bottom ul {
     }
 
     aside,
-    article img,
-    section#spotlight {
+    article>p>img,
+    #spotlight {
         display: none;
     }
 
@@ -67,32 +71,32 @@ nav#bottom ul {
     }
 
     nav#top ul li:nth-of-type(1) {
-        background-image: url(cw_image01.png) no-repeat;
+        background: url(cw_image01.png) no-repeat;
         width: 100%;
     }
 
     nav#top ul li:nth-of-type(2) {
-        background-image: url(cw_image02.png) no-repeat;
+        background: url(cw_image02.png) no-repeat;
         width: 100%;
     }
 
     nav#top ul li:nth-of-type(3) {
-        background-image: url(cw_image03.png) no-repeat;
+        background: url(cw_image03.png) no-repeat;
         width: 100%;
     }
 
     nav#top ul li:nth-of-type(4) {
-        background-image: url(cw_image04.png) no-repeat;
+        background: url(cw_image04.png) no-repeat;
         width: 100%;
     }
 
     nav#top ul li:nth-of-type(5) {
-        background-image: url(cw_image05.png) no-repeat;
+        background: url(cw_image05.png) no-repeat;
         width: 100%;
     }
 
     nav#top ul li:nth-of-type(6) {
-        background-image: url(cw_image06.png) no-repeat;
+        background: url(cw_image06.png) no-repeat;
         width: 100%;
     }
 
