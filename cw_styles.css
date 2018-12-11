@@ -40,7 +40,7 @@ nav#bottom ul {
     flex: 1;
 }
 
-/* For the extensive chunk of code underneath, I have added styles that will only affect mobile devices. */
+/* For the extensive chunk of code underneath, I have added styles that will only affect mobile devices. In the first section, I gave the page body a background color of black, gave the page content a text color of white, hid certain elements, defined the ul elements in the top nav as a flexbox, and edited the sizes of the list items in the top nav by giving them a certain base size and defining how much they shrink or grow as the website is expanded/contracted. */
 /* ===============================
 	Mobile Styles up to 480 pixels
    ===============================
@@ -70,6 +70,7 @@ nav#bottom ul {
         flex: 1 1 130px;
     }
 
+    /* Second, I gave all of the top links in the website a background image and made it so that the background would only display once; I also made it so that the images completely takes up it's space. */
     nav#top ul li:nth-of-type(1) {
         background: url(cw_image01.png) no-repeat;
         width: 100%;
@@ -100,6 +101,7 @@ nav#bottom ul {
         width: 100%;
     }
 
+    /* Third, I defined the email and phone number as a flexbox and made it so that the content in rows isn't wrapped. I have also changed the font color to white and the background color to red. Finally, I gave the links rounded corners and a padding so the red background color extends a bit past the actual element itself and removed underlines. */
     p#links {
         display: -webkit-flex;
         display: flex;
@@ -117,6 +119,7 @@ nav#bottom ul {
     }
 }
 
+/* In the final chunk of code, I have added styles that will only affect screen sizes past mobile like tablets or desktops. First, I defined the body and ul elements within the top nav as flex boxes. Then, I gave the article and flex elements a certain size and rate at which they grow/shrink as the website is expanded/contracted. Next, I gave the aforementioned ul elements a background color and height as they are in a row. I also made is so that the content/items are aligned towards the center. Finally, I gave the list items within the previously mentioned ul items a certain base size and grow/shrink rate so that their size will change according to the screen size and hid the links for the email and phone. */
 /* ============================================
 	Tablet and Desktop Devices: 481px or more 
    ============================================
